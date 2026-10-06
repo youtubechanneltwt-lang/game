@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battle Strike 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="game">
+
+    <div id="hud">
+      <div class="hud-box">
+        ❤️ HP: <span id="health">100</span>
+      </div>
+
+      <div class="hud-box">
+        🔫 Ammo: <span id="ammo">30</span>
+      </div>
+
+      <div class="hud-box">
+        🎯 Kills: <span id="kills">0</span>
+      </div>
+    </div>
+
+    <div id="crosshair">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="message">
+      <h1>BATTLE STRIKE 3D</h1>
+      <p>WASD = Move | Mouse = Aim | Click = Shoot</p>
+      <button id="startBtn">START GAME</button>
+    </div>
+
+    <div id="gameOver">
+      <h1>GAME OVER</h1>
+      <p>Kills: <span id="finalKills">0</span></p>
+      <button onclick="location.reload()">PLAY AGAIN</button>
+    </div>
+
+    <div id="damage"></div>
+
+    <canvas id="gameCanvas"></canvas>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
